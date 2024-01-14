@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "319263367344",
+    "project_id": "co-expense",
+    "storage_bucket": "co-expense.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319263367344:android:8ce08c3cad8cf1b81c5b75",
+        "android_client_info": {
+          "package_name": "com.example.co_expense.co_expense"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgqceNn7i1yO1Lvm3JoAMXeOrqNnm_QrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
