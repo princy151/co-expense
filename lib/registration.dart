@@ -1,6 +1,6 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'login.dart'; // Import your LoginScreen widget
+import 'login/login_screen.dart'; // Import your LoginScreen widget
 
 
 class RegistrationScreen extends StatefulWidget {
@@ -45,13 +45,13 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               obscureText: true,
             ),
             ElevatedButton(onPressed: () async{
-              // var data = {
-              //   "username": _usernameController.text,
-              //   "email": _emailController.text,
-              //   // "email": emailController.text,
-              //   // "password": passwordController.text,
-              //
-              // };
+              var data = {
+                "username": _usernameController.text,
+                "email": _emailController.text,
+                // "email": emailController.text,
+                // "password": passwordController.text,
+
+              };
               await database.ref().child("users").push().set(data).then((value) {
                 print("Success");
               }).onError((error, stackTrace) {
@@ -62,7 +62,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => LoginScreen()),
+                  MaterialPageRoute(builder: (context) => LoginForm()),
                 );
               },
                 // Handle user registration here
